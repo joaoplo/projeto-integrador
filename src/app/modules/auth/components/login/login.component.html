@@ -6,12 +6,20 @@
     <div class="card-body">
       <form>
         <div class="mb-3">
-          <label for="username" class="form-label">CPF:<label class="text-danger">*</label></label>
-          <input type="text" class="form-control" id="username" placeholder="Insira seu CPF">
+          <label for="username" class="form-label">
+            <i class="pi pi-user" style="font-size: 0.8rem; padding-right: 0.1rem"></i>
+            CPF:<label class="text-danger">*</label>
+          </label>
+          <br>
+          <input type="text" pInputText placeholder="Insira seu CPF" class="w-100"/>
         </div>
         <div class="mb-3">
-          <label for="password" class="form-label">Senha:<label class="text-danger">*</label></label>
-          <input type="password" class="form-control" id="password" placeholder="Insira sua senha">
+          <label for="password" class="form-label">
+            <i class="pi pi-unlock" style="font-size: 0.8rem; padding-right: 0.1rem"></i>
+            Senha:<label class="text-danger">*</label>
+          </label>
+          <br>
+          <p-password [(ngModel)]="password" [toggleMask]="true"></p-password>
         </div>
         <button type="submit" class="btn btn-primary w-100">Login</button>
       </form>
