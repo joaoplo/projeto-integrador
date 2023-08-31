@@ -6,7 +6,7 @@ import {PedidoComponent} from "./components/pedido/pedido.component";
 import { MenuModule } from 'primeng/menu';
 import { ButtonModule } from 'primeng/button';
 import { SidebarModule } from 'primeng/sidebar';
-
+import { MenubarModule } from 'primeng/menubar';
 @NgModule({
   declarations: [
     PedidoComponent
@@ -16,7 +16,8 @@ import { SidebarModule } from 'primeng/sidebar';
     PacienteRoutingModule,
     MenuModule,
     ButtonModule,
-    SidebarModule
+    SidebarModule,
+    MenubarModule
   ]
 })
 export class PacienteModule { }

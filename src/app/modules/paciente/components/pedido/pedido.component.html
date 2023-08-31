@@ -1,9 +1,41 @@
-<div class="card flex justify-content-center">
-  <p-sidebar [(visible)]="sidebarVisible">
-    <h3>Sidebar</h3>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+<div class="vh-100">
+  <!-- Header -->
+  <header class="bg-green-800 text-white p-3 d-flex">
+    <h3 class="w-100">Seu Cabeçalho Aqui</h3>
+    <p class="m-0 d-flex align-items-center">
+      <i class="pi pi-sign-out pe-2"></i> <!-- Adicionei a classe pe-2 para espaçamento à direita -->
+      Sair
     </p>
-  </p-sidebar>
+  </header>
+
+  <div class="d-flex vh-100">
+    <!-- Sidebar -->
+    <nav class="sidebar bg-green-700 bg-opacity-75 bg-gradient text-white p-4 p-sidebar-fixed p-sidebar-sticky" style="width: 250px;">
+      <ul class="list-unstyled p-0">
+        <li class="p-2 ps-5">
+          <i class="pi pi-list p-1"></i> <!-- Ícone -->
+          Pedidos
+        </li>
+        <li class="p-2 ps-5">
+          <i class="fa-thin fa-utensils" style="color: #ffffff;"></i>
+          Dieta
+        </li>
+        <li class="p-2 ps-5">
+          <i class="pi pi-user p-1"></i>
+          Perfil
+        </li>
+        <!-- ... more menu items ... -->
+      </ul>
+    </nav>
+
+    <!-- Content Area -->
+    <div class="flex-grow-1 p-4">
+
+      <div class="card">
+        <p-menubar [model]="items"></p-menubar>
+      </div>
+
+      <!-- Content goes here -->
+    </div>
+  </div>
 </div>
