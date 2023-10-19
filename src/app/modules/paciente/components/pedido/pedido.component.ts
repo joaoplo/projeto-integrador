@@ -9,6 +9,9 @@ import { MenuItem } from 'primeng/api';
 export class PedidoComponent {
   sidebarVisible: boolean = true;
   items: MenuItem[] = []; // Definindo a array de items do menu
+  itemsMenu: MenuItem[] = [];
+  menuVisible = false;
+  menuButton: any;
 
   ngOnInit(): void {
     // Definindo os itens do menu
@@ -35,5 +38,13 @@ export class PedidoComponent {
         ]
       }
     ];
+    this.itemsMenu = [
+      {
+        label: 'Meu Perfil'
+      },
+      {
+        label: 'Sair'
+      }
+    ]
   }
 }

@@ -7,6 +7,7 @@ import { MenuModule } from 'primeng/menu';
 import { ButtonModule } from 'primeng/button';
 import { SidebarModule } from 'primeng/sidebar';
 import { MenubarModule } from 'primeng/menubar';
+import { ContextMenuModule } from 'primeng/contextmenu';
 @NgModule({
   declarations: [
     PedidoComponent
@@ -17,7 +18,8 @@ import { MenubarModule } from 'primeng/menubar';
     MenuModule,
     ButtonModule,
     SidebarModule,
-    MenubarModule
+    MenubarModule,
+    ContextMenuModule
   ]
 })
 export class PacienteModule { }

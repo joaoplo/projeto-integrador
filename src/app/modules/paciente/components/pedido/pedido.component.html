@@ -2,7 +2,9 @@
   <!-- Header -->
   <header class="bg-green-800 text-white p-3 d-flex">
     <h3 class="w-100">Seu Cabeçalho Aqui</h3>
-    <button class="p-button p-button-primary p-button-sm bg-green-800 border-transparent">
+    <p-menu #menu [model]="itemsMenu" [popup]="true">
+    </p-menu>
+    <button class="p-button p-button-primary p-button-sm bg-green-800 border-transparent" (click)="menu.target($event)">
       <i class="pi pi-bars mr-2"></i>
       <span class="white-space-nowrap">Olá, João Pedro</span>
     </button>
